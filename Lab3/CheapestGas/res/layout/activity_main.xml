@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:text="Lat" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Latitude" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:text="Long" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Longitude" />
+
+    <TextView
+        android:id="@+id/gas_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cheap"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cheap"
+        android:layout_toLeftOf="@+id/cheap"
+        android:text="Get ZipCode" />
+
+    <EditText
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Address" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/gas_station"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="47dp"
+        android:text="OR" />
+
+    <Button
+        android:id="@+id/cheap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gas_station"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="18dp"
+        android:text="Cheapest GasStation" />
+
+</RelativeLayout>
